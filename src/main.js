@@ -1,6 +1,15 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
+import Drag from './Directives/Drag.js'
+import Resize from './Directives/Resize.js'
+
 import './assets/main.css'
 
-createApp(App).mount('#app')
+
+const app = createApp(App)
+
+app.directive('drag', Drag)
+app.directive('resize', Resize)
+
+app.mount('#app')
