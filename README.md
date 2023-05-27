@@ -35,42 +35,41 @@ Datas tree must be in JSON format, like this :
 
 ```json
 {
-	"title": "Your title",
-	"subtitle": "Your subtitle",
-	"elements": [
-		{
-			"title": "Foo",
-			"type": "file",
-			"content": "Foo file content ..."
-		},
-		{
-			"title": "Bar",
-			"type": "dir",
-			"elements": [
-				{
-					"title": "Fizz",
-					"type": "file",
-					"content": ["Apple", "Banana", "Kiwi", "Orange"]
-				},
-				{
-					"title": "Fizz",
-					"type": "file",
-					"content": "Lorem ipsum ..."
-				}
-			]
-		}
-	]
+  "title": "Your title",
+  "subtitle": "Your subtitle",
+  "elements": [
+    {
+      "title": "Foo",
+      "type": "file",
+      "content": "Foo file content ..."
+    },
+    {
+      "title": "Bar",
+      "type": "dir",
+      "elements": [
+        {
+          "title": "Fizz",
+          "type": "file",
+          "content": ["Apple", "Banana", "Kiwi", "Orange"]
+        },
+        {
+          "title": "Fizz",
+          "type": "file",
+          "content": "Lorem ipsum ..."
+        }
+      ]
+    }
+  ]
 }
 ```
 
 You can store your customs icons in **public/icons/** directory and set it in your datas :
 
 ```json
-// some element in your datas tree
 {
-	"title": "Your element title",
-	"type": "file",
-	"icon": "your_icon_title.png"
+  "title": "Your element title",
+  "type": "file",
+  "icon": "your_icon_title.png"
 }
 ```
 You can store your customs images in **public/images/** directory 

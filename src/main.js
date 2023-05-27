@@ -6,7 +6,6 @@ import Resize from './Directives/Resize.js'
 
 import './assets/main.css'
 
-
 const app = createApp(App)
 
 app.directive('drag', Drag)
